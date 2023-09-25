@@ -17,8 +17,8 @@ func main() {
 		log.Fatal(err)
 	}
 	inputScore = strings.TrimSpace(inputScore)
-	score, err := strconv.ParseInt(inputScore, 32)
-
+	score, err := strconv.ParseFloat(inputScore, 64)
+	var grade string
 	if inputScore >= 90 {
 		grade := "A grade"
 	} else {
@@ -26,5 +26,4 @@ func main() {
 	}
 	fmt.Println(inputScore)
 	fmt.Println("You will get", grade) //undefined: grade
-	fmt.Println(inputScore)
 }
