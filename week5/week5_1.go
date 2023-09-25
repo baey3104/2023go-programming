@@ -24,7 +24,7 @@ func main() {
 	} else {
 		grade := "under A grade"
 	}
-	fmt.Println(intScore)
+	fmt.Println(inputScore)
 	fmt.Println("You will get", grade) //undefined: grade
 	fmt.Println(inputScore)
 }
