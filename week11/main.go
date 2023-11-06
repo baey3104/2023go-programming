@@ -14,6 +14,10 @@ func main() {
 	fmt.Println(test)
 	//fmt.Println(test[5]) // 컴파일에러, invalid argument: index 5 out of bounds [0:5]
 
-	fmt.Printf("%#v\n", primes)
-	fmt.Printf("%#v\n", test)
+	i := 0
+	// for i < 6 { // while
+	for i < len(test) {
+		fmt.Println(test[i])
+		i++
+	}
 }
